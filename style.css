@@ -1,0 +1,100 @@
+body {
+    background-image: url(img/low-poly-texture-2.png);
+    
+}
+
+
+#container {
+    
+   
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    
+    margin-top: 2.5%;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
+    text-align: center;
+    background-color: whitesmoke;
+    
+    
+   
+    
+    max-width: 860px;
+    min-width: 250px;
+    
+    
+    padding: 1.5%;
+    border-radius: 25px;
+    
+}
+
+@media only screen and (max-device-width: 860px) {
+   /* define mobile specific styles come here */
+   #container {
+    
+   
+    position: absolute;
+    top: 0; left: 0; right: 0; 
+    
+    margin-top: 8%;
+    margin-right: 8%;
+    margin-left: 8%;
+    
+    
+    
+    text-align: center;
+    background-color: whitesmoke;
+    
+    
+   
+    
+    max-width: 860px;
+    min-width: 250px;
+    
+    
+    padding: 1.5%;
+    border-radius: 25px;
+    
+}
+ }
+
+#balance p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#counterMain th {
+    text-align: center;
+}
+
+#counterMain form table {
+    margin: 0 auto;
+    padding: 1.5%;
+
+}
+
+#counterMain tr {
+    height: 35px;
+}
+
+#counterMain td {
+    width: 70px;
+    
+}
+
+
+#counterMain form input {
+    width: 50px;
+}
+
+#counterTotal form table{
+    margin: 0 auto;
+    margin-top: 15%;
+}
+
+#counterTotal td {
+    width: 150px;
+    font-size: 28px;
+}

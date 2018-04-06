@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CoinCounter v1.0</title>
+    <meta name="description" content="Dynamic Coin Counter">
+    <meta name="author" content="Summit Design Australia">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">  
+    <script src="jquery-3.2.1.min.js"></script>
+    
+</head>
+
+<body>
+    <div id="container">
+        <div id="ccounterTitle">
+            <h1>Coin Counter</h1>
+            <p>Insert quantity of each value in the fields below.</p>
+            <hr>
+        </div>
+        <div id="counterMain">
+            <form>
+                <table>
+                    <tr><th>Value</th><th>Qty</th><th></th><th></th><th>Total</th></tr>
+                    <tr><td id="value5c">0.05</td><td><input type="number" value="0" id="5cents" onchange="getfiveCents(this.value);"></td><td></td><td></td><td id="5c">0.00</td></tr>
+                    <tr><td id="value10c">0.10</td><td><input type="number" value="0" id="10cents" onchange="gettenCents(this.value);"></td><td></td><td></td><td id="10c">0.00</td></tr>
+                    <tr><td id="value20c">0.20</td><td><input type="number" value="0" id="20cents" onchange="gettwentyCents(this.value);"></td><td></td><td></td><td id="20c">0.00</td></tr>
+                    <tr><td id="value50c">0.50</td><td><input type="number" value="0" id="50cents" onchange="getfiftyCents(this.value);"></td><td></td><td></td><td id="50c">0.00</td></tr>
+                    <tr style="height:15px;"></tr>
+                    <tr><td id="value1d">1.00</td><td><input type="number" value="0" id="1dollar" onchange="getoneDollar(this.value);"></td><td></td><td></td><td id="1d">0.00</td></tr>
+                    <tr><td id="value2d">2.00</td><td><input type="number" value="0" id="2dollar" onchange="gettwoDollar(this.value);"></td><td></td><td></td><td id="2d">0.00</td></tr>
+                     <tr style="height:15px;"></tr>
+                    <tr><td id="value5d">5.00</td><td><input type="number" value="0" id="5dollar" onchange="getfiveDollar(this.value);"></td><td></td><td></td><td id="5d">0.00</td></tr>
+                    <tr><td id="value10d">10.00</td><td><input type="number" value="0" id="10dollar" onchange="gettenDollar(this.value);"></td><td></td><td></td><td id="10d">0.00</td></tr>
+                    <tr><td id="value20d">20.00</td><td><input type="number" value="0" id="20dollar" onchange="gettwentyDollar(this.value);"></td><td></td><td></td><td id="20d">0.00</td></tr>
+                    <tr><td id="value50d">50.00</td><td><input type="number" value="0" id="50dollar" onchange="getfiftyDollar(this.value);"></td><td></td><td></td><td id="50d">0.00</td></tr>
+                    <tr><td id="value100d">100.00</td><td><input type="number" value="0" id="100dollar" onchange="gethundredDollar(this.value);"></td><td></td><td></td><td id="100d">0.00</td></tr>
+                </table>
+            </form>
+            <hr>
+            <div id="balance">
+                <button type="button" onclick="addBalance(this.value)">Calculate Balance</button>
+                <br /><br />
+                <p id="addBalance"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="calculate.js"></script>
+    
+</body>
+</html>
